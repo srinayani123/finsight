@@ -85,13 +85,6 @@ sample_data/       # Sample CSV for demo
 tests/
 ```
 
-## What's not great yet
-
-- **Categorization rules cover common US merchants.** Non-US banks, non-English descriptions, or niche vendors will fall through to "Other" unless you enable the LLM fallback. A learned classifier trained on the user's own corrections would be the right fix.
-- **Anomaly detection is statistical, not contextual.** It catches outliers and duplicates well, but doesn't understand context (e.g. a holiday shopping spike looks anomalous, even though it's expected).
-- **Q&A accuracy depends on the LLM.** Smaller local models sometimes invent totals even with the pre-computed context. Larger models (Kimi K2.5, GPT-4o-mini) handle it well.
-- **No persistence.** Each upload starts fresh — no month-over-month tracking across sessions. A sqlite-backed user store would fix this.
-- **Single user.** No auth, no multi-account support. Fine for local use, not fine for anything deployed.
 
 ## Tech
 
