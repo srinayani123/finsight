@@ -17,15 +17,11 @@ A LangGraph pipeline with three stages:
 Then there's a separate Q&A agent that answers freeform questions against a compact text summary of your data. The summary is pre-computed, so the LLM can't hallucinate numbers — it's just translating the question into a lookup.
 
 ## Demo
-
-*Demo screenshots coming — run the app on the sample data to generate your own.*
-
-```
-![Monthly summary and spending breakdown](docs/screenshots/demo-summary.png)
-![Anomalies detected on sample data](docs/screenshots/demo-anomalies.png)
-![Q&A example](docs/screenshots/demo-qa.png)
-```
-
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 ## Setup
 
 ```bash
